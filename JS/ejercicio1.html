@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios JS</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>EJERCICIOS 1</h1>
+    </header>
+    <nav class="menu">
+        <div class="menu-contenedor">
+            <ul class="menu-flex">
+                <li><a href="./">Inicio</a></li>
+                <li><a href="./ejercicio1.html">Ejercicio 1</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="contenedor sombra">
+        <section>
+            <div>
+                <h2>Cálculo de la superficie de un triángulo</h2>
+                <label for="base">Ingrese la base</label>
+                <input type="number" id="base" /> <br />
+                <label for="altura">Ingrese la altura</label>
+                <input type="number" id="altura" /> <br />
+                <button onclick="calcular()"> Calcular </button>
+            </div>
+            <p>La superficie es: <span id="sup"></span> </p>
+        </section>
+        <section>
+            <div>
+                <h2>Cálculo de la superficie y perimetro de un rectangulo</h2>
+                <label for="base">Ingrese la base</label>
+                <input type="number" id="base2" /> <br />
+                <label for="altura">Ingrese la altura</label>
+                <input type="number" id="altura2" /> <br />
+                <button onclick="calcular2()"> Calcular </button>
+            </div>
+            <p>La superficie es: <span id="sup2"></span> </p>
+            <p>El perimetro es: <span id="per2"></span> </p>
+        </section>
+        <section>
+            <div>
+                <h2>Cálculo del volumen y el area de un circulo</h2>
+                <label for="radio">Ingrese el radio</label>
+                <input type="number" id="radio" /> <br />
+                <label for="altura">Ingrese la altura</label>
+                <input type="number" id="altura3" /> <br />
+                <button onclick="calcular3()"> Calcular </button>
+            </div>
+            <p>El volumen es: <span id="vol"></span> </p>
+            <p>El area es: <span id="area"></span> </p>
+        </section>
+        <section>
+            <div>
+                <h2>Cálculo el vuelto</h2>
+                <label for="precio">Ingrese el precio</label>
+                <input type="number" id="precio" /> <br />
+                <label for="pago">Ingrese el pago</label>
+                <input type="number" id="pago" /> <br />
+                <button onclick="calcular4()"> Calcular </button>
+            </div>
+            <p>Su vuelto es $<span id="vuelto"></span> </p>
+        </section>
+        <section>
+            <div>
+                <h2>Cálcular la cantidad de segundos en tantos dias</h2>
+                <label for="dias">Ingrese los dias</label>
+                <input type="number" id="dias" /> <br />
+                <button onclick="calcular5()"> Calcular </button>
+            </div>
+            <p>En <span id="diasspan"></span> dias hay <span id="seg"></span> segundos</p>
+        </section>
+    </main>
+    <footer>
+        <p>ISCA 4014 - Todos los derechos reservados - 2024</p>
+    </footer>
+    <script src="./ejercicio1.js"></script>
+</body>
+
+</html>
